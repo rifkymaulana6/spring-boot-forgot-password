@@ -1,24 +1,25 @@
 server:
-  port: 8080
+  port: 5432
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/password_reset?createDatabaseIfNotExist=true&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Asia/Jakarta&useSSL=false
-    username: root
-    password:
+    url: jdbc:postgres://lfnqnhrhumrikp:1a93938d0c64cf906fcfbbb50303f2140bc28fa38d90d87b78a3f13da0bb3ac0@ec2-23-20-224-166.compute-1.amazonaws.com:5432/d66lt16p5gt5n3
+    username: lfnqnhrhumrikp
+    password: 1a93938d0c64cf906fcfbbb50303f2140bc28fa38d90d87b78a3f13da0bb3ac0
+
   jpa:
     hibernate:
       ddl-auto: update
     show-sql: true
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.MySQL8Dialect
+        dialect: org.hibernate.dialect.PostgreSQLDialect
   messages:
     basename: base
   mail:
     default-encoding: UTF-8
     host: smtp.gmail.com
-    username:
-    password:
+    username: rifkymaulana.ofc@gmail.com
+    password: kjbgsuwgzrwqvnki
     port: 587
     properties:
       mail:
